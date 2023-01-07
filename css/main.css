@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+html {
+	font-family: 'Noto Sans KR', sans-serif;	
+	font-size: 14px;
+}
+body {
+	overflow-x: hidden; /* 가로 스크롤 생기는것 방지*/
+	color: rgb(29, 29, 31);
+	letter-spacing: -0.05em; /*자간 살짝 줄임*/
+	background-color: white;
+}
+p {
+	line-height: 1.6; /* 행간 조금 떨어지게 */
+}
+a {
+	color: rgb(29, 29, 31);
+	text-decoration: none;
+}
+
+
+
+.global-nav {
+	height: 44px;
+}
+.local-nav {
+	height: 52px;
+	border-bottom: 1px solid #ddd;
+}
+.global-nav-links,
+.local-nav-links {
+	display: flex;
+	align-items: center;
+	max-width: 1000px;
+	height: 100%;
+	margin: 0 auto; /* 센터정렬 */
+}
+.global-nav-links {
+	justify-content: space-between;
+}
+.local-nav-links .product-name {
+	margin-right: auto;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+.local-nav-links a {
+	font-size: 0.8rem;
+}
+.local-nav-links a:not(.product-name) { /* product-name은 제외시킴 */
+	margin-left: 2em;
+}
